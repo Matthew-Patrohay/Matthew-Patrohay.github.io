@@ -3597,15 +3597,15 @@ input, select, textarea {
 		}
 
 			#banner h2:before, #banner h2:after {
-				-moz-transition: width 5.85s ease;
-				-webkit-transition: width 5.85s ease;
-				-ms-transition: width 5.85s ease;
-				transition: width 5.85s ease;
-				-moz-transition-delay: 5.25s;
-				-webkit-transition-delay: 5.25s;
-				-ms-transition-delay: 5.25s;
-				transition-delay: 5.25s;
-				background: #ffffff;
+				-moz-transition: width 2s ease;
+				-webkit-transition: width 2s ease;
+				-ms-transition: width 2s ease;
+				transition: width 2s ease;
+				-moz-transition-delay: 1s;
+				-webkit-transition-delay: 1s;
+				-ms-transition-delay: 1s;
+				transition-delay: 1s;
+				background: #ff00ff;
 				content: '';
 				display: block;
 				height: 2px;
@@ -3633,11 +3633,12 @@ input, select, textarea {
 				-webkit-transition-delay: 13.5s;
 				-ms-transition-delay: 13.5s;
 				transition-delay: 13.5s;
-				*/
+				
 				-moz-transform: translateY(2em) 5s ease;
 				-webkit-transform: translateY(2em) 5s ease;
 				-ms-transform: translateY(2em) 5s ease;
 				transform: translateY(2em) 5s ease;
+				*/
 			}
 
 		#banner p {
@@ -3751,15 +3752,15 @@ input, select, textarea {
 		}
 
 	body.is-preload #banner .more {
-		-moz-transform: translateY(-18.5em);
-		-webkit-transform: translateY(-18.5em);
-		-ms-transform: translateY(-18.5em);
-		transform: translateY(-18.5em);
+		-moz-transform: translateY(18.5em);
+		-webkit-transform: translateY(18.5em);
+		-ms-transform: translateY(18.5em);
+		transform: translateY(18.5em);
 		opacity: 0;
 	}
 
 	body.is-preload #banner:after {
-		opacity: 0.5;
+		opacity: 1;
 	}
 
 /* CTA */
