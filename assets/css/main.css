@@ -3597,6 +3597,14 @@ input, select, textarea {
 		}
 
 			#banner h2:before, #banner h2:after {
+				-moz-transform: translateY(5em) 2s ease;
+				-webkit-transform: translateY(5em) 2s ease;
+				-ms-transform: translateY(5em) 2s ease;
+				transform: translateY(5em) 2s ease;
+				-moz-transition-delay: 1s;
+				-webkit-transition-delay: 1s;
+				-ms-transition-delay: 1s;
+				transition-delay: 1s;
 				-moz-transition: width 2s ease;
 				-webkit-transition: width 2s ease;
 				-ms-transition: width 2s ease;
@@ -3605,7 +3613,7 @@ input, select, textarea {
 				-webkit-transition-delay: 1s;
 				-ms-transition-delay: 1s;
 				transition-delay: 1s;
-				background: #ff00ff;
+				background: #ffffff;
 				content: '';
 				display: block;
 				height: 2px;
