@@ -3605,7 +3605,7 @@ input, select, textarea {
 				-webkit-transition-delay: 5.25s;
 				-ms-transition-delay: 5.25s;
 				transition-delay: 5.25s;
-				background: #ffffff;
+				background: #ff00ff;
 				content: '';
 				display: block;
 				height: 2px;
@@ -3620,6 +3620,12 @@ input, select, textarea {
 				*/
 				top: 0;
 				right: 0;
+
+			}
+
+			#banner h2:after {
+				bottom: 0;
+				right: 0;
 				-moz-transition-delay: 13.5s;
 				-webkit-transition-delay: 13.5s;
 				-ms-transition-delay: 13.5s;
@@ -3628,11 +3634,6 @@ input, select, textarea {
 				-webkit-transform: translateY(50%);
 				-ms-transform: translateY(50%);
 				transform: translateY(50%);
-			}
-
-			#banner h2:after {
-				bottom: 0;
-				right: 0;
 			}
 
 		#banner p {
