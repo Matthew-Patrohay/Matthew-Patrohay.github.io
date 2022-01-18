@@ -3605,7 +3605,7 @@ input, select, textarea {
 				-webkit-transition-delay: 5.25s;
 				-ms-transition-delay: 5.25s;
 				transition-delay: 5.25s;
-				background: #ff00ff;
+				background: #ffffff;
 				content: '';
 				display: block;
 				height: 2px;
@@ -3746,10 +3746,10 @@ input, select, textarea {
 		}
 
 	body.is-preload #banner .more {
-		-moz-transform: translateY(18.5em);
-		-webkit-transform: translateY(18.5em);
-		-ms-transform: translateY(18.5em);
-		transform: translateY(18.5em);
+		-moz-transform: translateY(-18.5em);
+		-webkit-transform: translateY(-18.5em);
+		-ms-transform: translateY(-18.5em);
+		transform: translateY(-18.5em);
 		opacity: 0;
 	}
 
