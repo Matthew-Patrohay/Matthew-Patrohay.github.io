@@ -3605,7 +3605,7 @@ input, select, textarea {
 				-webkit-transition-delay: 5.25s;
 				-ms-transition-delay: 5.25s;
 				transition-delay: 5.25s;
-				background: #ffffff;
+				background: #ff00ff;
 				content: '';
 				display: block;
 				height: 2px;
@@ -3614,26 +3614,28 @@ input, select, textarea {
 			}
 
 			#banner h2:before {
-				/* 
 				top: 0;
-				left: 0; 
-				*/
-				top: 0;
-				right: 0;
+				left: 0;
+				-moz-transform: translateY(-2em) 5s ease;
+				-webkit-transform: translateY(-2em) 5s ease;
+				-ms-transform: translateY(-2em) 5s ease;
+				transform: translateY(-2em) 5s ease;
 
 			}
 
 			#banner h2:after {
 				bottom: 0;
 				right: 0;
+				/*
 				-moz-transition-delay: 13.5s;
 				-webkit-transition-delay: 13.5s;
 				-ms-transition-delay: 13.5s;
 				transition-delay: 13.5s;
-				-moz-transform: translateY(10em);
-				-webkit-transform: translateY(10em);
-				-ms-transform: translateY(10em);
-				transform: translateY(10em);
+				*/
+				-moz-transform: translateY(2em) 5s ease;
+				-webkit-transform: translateY(2em) 5s ease;
+				-ms-transform: translateY(2em) 5s ease;
+				transform: translateY(2em) 5s ease;
 			}
 
 		#banner p {
