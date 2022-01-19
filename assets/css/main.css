@@ -3597,6 +3597,15 @@ input, select, textarea {
 		}
 
 			#banner h2:before, #banner h2:after {
+				-moz-transition: width 2s ease;
+				-webkit-transition: width 2s ease;
+				-ms-transition: width 2s ease;
+				transition: width 2s ease;
+				-moz-transition-delay: 1s;
+				-webkit-transition-delay: 1s;
+				-ms-transition-delay: 1s;
+				transition-delay: 1s;
+				
 				/*Current attempt at translating vertically */
 				-moz-transition: -moz-transform 5s ease;
 				-webkit-transition: -webkit-transform 5s ease;
@@ -3611,15 +3620,7 @@ input, select, textarea {
 				-ms-transform: translateY(5em);
 				transform: translateY(5em);
 				
-				-moz-transition: width 2s ease;
-				-webkit-transition: width 2s ease;
-				-ms-transition: width 2s ease;
-				transition: width 2s ease;
-				-moz-transition-delay: 1s;
-				-webkit-transition-delay: 1s;
-				-ms-transition-delay: 1s;
-				transition-delay: 1s;
-				background: #ffffff;
+				background: #ff00ff;
 				content: '';
 				display: block;
 				height: 2px;
