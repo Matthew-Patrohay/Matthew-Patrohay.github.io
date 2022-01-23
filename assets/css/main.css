@@ -3605,7 +3605,7 @@ input, select, textarea {
 				-webkit-transition-delay: 1s;
 				-ms-transition-delay: 1s;
 				transition-delay: 1s;
-				background: #ffffff;
+				background: #ff00ff;
 				content: '';
 				display: block;
 				height: 2px;
@@ -3615,6 +3615,8 @@ input, select, textarea {
 
 			#banner h2:before {
 				/*Current attempt at translating vertically */
+
+				/* This Freezes the bars, bad
 				-moz-transition: -moz-transform 5s ease;
 				-webkit-transition: -webkit-transform 5s ease;
 				-ms-transition: -ms-transform 5s ease;
@@ -3627,7 +3629,8 @@ input, select, textarea {
 				-webkit-transition-delay: 5s;
 				-ms-transition-delay: 5s;
 				transition-delay: 5s;
-				
+				*/
+
 				top: 0;
 				left: 0;
 			}
