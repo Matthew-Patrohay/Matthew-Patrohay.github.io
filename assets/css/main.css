@@ -3577,6 +3577,12 @@ input, select, textarea {
 		overflow: hidden;
 		position: relative;
 		text-align: center;
+
+		animation: upmain 1s infinite;
+				animation-iteration-count: 1;
+				animation-fill-mode: forwards;
+				animation-delay: 2.9s;
+				animation-timing-function: ease-out;
 	}
 
 		#banner h2 {
@@ -3594,6 +3600,12 @@ input, select, textarea {
 			padding: 0.35em 1em;
 			position: relative;
 			z-index: 1;
+
+			/* animation: upmain 1s infinite;
+				animation-iteration-count: 1;
+				animation-fill-mode: forwards;
+				animation-delay: 2.9s;
+				animation-timing-function: ease-out; */
 		}
 
 			#banner h2:before, #banner h2:after {
@@ -3605,7 +3617,7 @@ input, select, textarea {
 				-webkit-transition-delay: 1s;
 				-ms-transition-delay: 1s;
 				transition-delay: 1s;
-				background: #ff00ff;
+				background: #ffffff;
 				content: '';
 				display: block;
 				height: 2px;
@@ -3613,43 +3625,53 @@ input, select, textarea {
 				width: 100%;
 			}
 
+			@keyframes upmain {
+				from {top: 0em;}
+				to {top: -2em;}
+			  }
+
+			@keyframes moveup {
+				from {top: 0em;}
+				to {top: -2em;}
+			  }
+			
+			@keyframes movedown {
+				from {top: 2.375em;}
+				to {top: 4.3em;}
+			  }
+
 			#banner h2:before {
-				/*Current attempt at translating vertically */
-
-				/* This Freezes the bars, bad
-				-moz-transition: -moz-transform 5s ease;
-				-webkit-transition: -webkit-transform 5s ease;
-				-ms-transition: -ms-transform 5s ease;
-				transition: transform 5s ease;
-				-moz-transform: translateY(-5em) 2s ease;
-				-webkit-transform: translateY(-5em) 2s ease;
-				-ms-transform: translateY(-5em) 2s ease;
-				transform: translateY(-5em) 2s ease;				
-				-moz-transition-delay: 5s;
-				-webkit-transition-delay: 5s;
-				-ms-transition-delay: 5s;
-				transition-delay: 5s;
-				*/
-
+				/* animation: moveup 1s infinite;
+				animation-iteration-count: 1;
+				animation-fill-mode: forwards;
+				animation-delay: 2.9s;
+				animation-timing-function: ease-out; */
 				top: 0;
 				left: 0;
 			}
 
 			#banner h2:after {
+				animation: movedown 1s infinite;
+				animation-iteration-count: 1;
+				animation-fill-mode: forwards;
+				animation-delay: 2.9s;
+				animation-timing-function: ease-out;
 				bottom: 0;
 				right: 0;
-				/*
-				-moz-transition-delay: 13.5s;
-				-webkit-transition-delay: 13.5s;
-				-ms-transition-delay: 13.5s;
-				transition-delay: 13.5s;
-				
-				-moz-transform: translateY(2em) 5s ease;
-				-webkit-transform: translateY(2em) 5s ease;
-				-ms-transform: translateY(2em) 5s ease;
-				transform: translateY(2em) 5s ease;
-				*/
 			}
+			/* #header .inner {
+				-moz-transition: max-height 5.75s ease, padding 5.75s ease, opacity 5.325s ease-in-out;
+				-webkit-transition: max-height 5.75s ease, padding 5.75s ease, opacity 5.325s ease-in-out;
+				-ms-transition: max-height 5.75s ease, padding 5.75s ease, opacity 5.325s ease-in-out;
+				transition: max-height 5.75s ease, padding 5.75s ease, opacity 5.325s ease-in-out;
+				-moz-transition-delay: 0.25s;
+				-webkit-transition-delay: 0.25s;
+				-ms-transition-delay: 0.25s;
+				transition-delay: 0.25s;
+				padding: 3rem 2rem;
+				max-height: 40rem;
+				overflow: hidden;
+			} */
 
 		#banner p {
 			letter-spacing: 0.225em;
