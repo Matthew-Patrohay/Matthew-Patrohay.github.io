@@ -4033,7 +4033,7 @@ input, select, textarea {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	margin-left: -1500px;
+	margin-left: 0px;
   }
   
   #parallax_back .parallax__layer{
