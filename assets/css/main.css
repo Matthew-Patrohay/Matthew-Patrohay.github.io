@@ -4062,7 +4062,7 @@ input, select, textarea {
   }
   
   :root{
-	  --yoffset: 10em;
+	  --yoffset: 0em;
   }
   #parallax_back .parallax__layer__0 {
 	transform: translateZ(-175px) scale(2.75) translateY(var(--yoffset));
