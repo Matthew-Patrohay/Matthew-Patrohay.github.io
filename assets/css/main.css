@@ -1,6 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
-
+@import "compass/css3";
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -4004,7 +4004,100 @@ input, select, textarea {
 			}
 
 		}
+/* Paralax Background */
 
+/* *{
+	box-sizing: border-box;
+  }
+  
+  html,
+  body{
+	background-color: #FEDCC8;
+  } */
+
+#parallax_back .contentparalax {
+	  background: rgba(0, 0, 0, 0.8);
+	  margin-top: 100vh;
+	  min-height: 100vh; // to make up for the lack of content
+	  position: relative;
+	  width: 100%;
+	}
+  
+	#parallax_back .parallax {
+	perspective: 100px;
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	right: 0;
+	bottom: 0;
+	margin-left: -1500px;
+  }
+  
+  #parallax_back .parallax__layer{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	
+	img{
+	  display: block;
+	  position: absolute;
+	  bottom: 0;
+	}
+  }
+  
+  #parallax_back .parallax__cover{
+	background: #2D112B;
+	display: block;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	height: 20em;
+	z-index: 2;
+  }
+  
+  :root{
+	  --yoffset: 10em;
+  }
+  #parallax_back .parallax__layer__0 {
+	transform: translateZ(-175px) scale(2.75) translateY(var(--yoffset));
+  }
+
+  #parallax_back .parallax__layer__1 {
+	transform: translateZ(-150px) scale(2.5) translateY(var(--yoffset));
+  }
+  
+  #parallax_back .parallax__layer__2 {
+	transform: translateZ(-125px) scale(2.25) translateY(var(--yoffset));
+  }
+  
+  #parallax_back .parallax__layer__3 {
+	transform: translateZ(-100px) scale(2) translateY(var(--yoffset));
+  }
+  
+  #parallax_back .parallax__layer__4 {
+	transform: translateZ(-75px) scale(1.75) translateY(var(--yoffset));
+  }
+  
+  #parallax_back .parallax__layer__5 {
+	transform: translateZ(-50px) scale(1.5) translateY(var(--yoffset));
+  }
+  
+  #parallax_back .parallax__layer__6 {
+	transform: translateZ(-25px) scale(1.25) translateY(var(--yoffset));
+  }
+  
+  #parallax_back .parallax__layer__7 {
+	transform: translateZ(0px) scale(1) translateY(var(--yoffset));
+  }
+
+  
+  
 /* Landing */
 
 	body.landing #page-wrapper {
