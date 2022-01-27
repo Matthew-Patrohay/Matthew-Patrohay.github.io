@@ -4060,7 +4060,7 @@ input, select, textarea {
 	height: 20em;
 	z-index: 2;
   }
-  
+  /* Variable for y offset of paralax */
   :root{
 	  --yoffset: 10em;
   }
